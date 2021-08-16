@@ -12,8 +12,32 @@
 
 .filme-principal .descricao {
   margin-bottom: 90px;
+  margin-top: 10px;
 }
 
 .titulo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 40px;
+  margin-top: 15%;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, .5);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 15px; 
+  padding: 15px 30px;
+  transition: .4s ease all;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
 }
