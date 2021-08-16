@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.filme-principal .container {
+  width: 50%;
+}
+
 .filme-principal .descricao {
   margin-bottom: 90px;
   margin-top: 10px;
