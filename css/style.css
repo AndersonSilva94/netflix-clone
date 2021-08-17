@@ -11,10 +11,22 @@
 
 body {
   background: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   color: white;
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/stranger_things_cover.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
   margin-left: 20px;
+}
+
+.box-content {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
