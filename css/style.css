@@ -45,3 +45,7 @@ body {
   padding-top: 15%;
   height: 550px;
 }
+
+.owl-dots {
+  display: none;
+}

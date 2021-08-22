@@ -21,6 +21,10 @@ header .logo {
   border-top-right-radius:70%;
 }
 
+.menu-principal {
+  margin-left: 25px;
+}
+
 header nav a {
   text-decoration: none;
   color: #AAA;
@@ -29,4 +33,5 @@ header nav a {
 
 header nav a:hover {
   color: #fff;
+  text-decoration: none;
 }
