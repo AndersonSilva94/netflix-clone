@@ -1,14 +1,24 @@
-header .container{
+header {
+  padding-top: 15px;
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+}
+
+header .container-header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 header .logo {
   color: var(--vermelho);
-  font-family: 'Arial Black', Times;
-  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  letter-spacing: 3px;
   margin-left: 5px;
+  border-top-left-radius:70%;
+  border-top-right-radius:70%;
 }
 
 header nav a {

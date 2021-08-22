@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/filme-principal.css">
+  <link rel="stylesheet" href="css/carousel.css">
 
   <!-- owl css -->
   <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
@@ -17,7 +28,7 @@
   
   <main>
     <header>
-      <div class="container">
+      <div class="container-header">
         <h2 class="logo">PLAYFLIX</h2>
         <nav>
           <a href="#">Início</a>
@@ -27,25 +38,84 @@
         </nav>
       </div>
     </header>
-    <div class="filme-principal">
-      <div class="container">
-        <h3 class="titulo">STRANGER THINGS</h3>
-        <p class="descricao">Romance no ar. Um shopping novinho em folha. Ratazanas enlouquecidas correndo para o perigo. É o verão de 1985 em Hawkins. E um verão pode mudar tudo</p>
-        <div class="botoes">
-          <button role="botao" class="botao">
-            <i class="fa-solid fa-play"></i>
-            ASSISTIR AGORA
-          </button>
-          <button role="botao" class="botao">
-            <i class="fa-solid fa-circle-info"></i>
-            MAIS INFORMAÇÕES
-          </button>
+    <div id="carouselMain" class="filme-principal carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselMain" data-slide-to="1"></li>
+        <li data-target="#carouselMain" data-slide-to="2"></li>
+        <li data-target="#carouselMain" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="container-stranger carousel-item active">
+          <div class="container">
+            <h3 class="titulo">STRANGER THINGS</h3>
+            <p class="descricao">Romance no ar. Um shopping novinho em folha. Ratazanas enlouquecidas correndo para o perigo. É o verão de 1985 em Hawkins. E um verão pode mudar tudo</p>
+            <div class="botoes">
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-play"></i>
+                ASSISTA AO TRAILER
+              </button>
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-info"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-suicide carousel-item">
+          <div class="container">
+            <h3 class="titulo">O ESQUADRÃO SUICIDA</h3>
+            <p class="descricao">Os supervilões Harley Quinn, Bloodsport , Peacemaker e uma coleção de malucos condenados da prisão de Belle Reve juntam-se à super-secreta e super-obscura Força Tarefa X, enquanto são deixados na remota ilha de Corto Maltese para combater o inimigo.</p>
+            <div class="botoes">
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-play"></i>
+                ASSISTA AO TRAILER
+              </button>
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-info"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-naruto carousel-item">
+          <div class="container">
+            <h3 class="titulo">NARUTO SHIPPUDEN</h3>
+            <p class="descricao">Naruto Shippuden ocorre 2 anos e meio após Naruto ter ficado para treinar com Jiraiya. Após seu retorno, Naruto descobre que seus amigos shinobi's o superaram na classificação, e ele caiu para trás. No entanto, com apenas 6 meses para resgatar Sasuke, Naruto tem de enfrentar inimigos ainda mais perigosos.</p>
+            <div class="botoes">
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-play"></i>
+                ASSISTA AO TRAILER
+              </button>
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-info"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-resident carousel-item">
+          <div class="container">
+            <h3 class="titulo">RESIDENT EVIL VILLAGE</h3>
+            <p class="descricao">Ambientada alguns anos após os terríveis eventos do premiado Resident Evil 7 biohazard, a nova história começa com Ethan Winters e sua esposa Mia vivendo tranquilamente em um novo lugar, livres dos pesadelos do passado. E bem quando estavam construindo uma vida nova juntos, a tragédia cai sobre eles novamente</p>
+            <div class="botoes">
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-play"></i>
+                ASSISTA AO TRAILER
+              </button>
+              <button role="botao" class="botao">
+                <i class="fas fa-solid fa-info"></i>
+                MAIS INFORMAÇÕES
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </main>
 
-  <section class="carousel-series">
+<!--   <section class="carousel-series">
     <h2>Séries em alta</h2>
     <div class="owl-carousel owl-theme section-indicacoes">
       <div class="item">
@@ -79,12 +149,14 @@
         <img src="https://www.themoviedb.org/t/p/original/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg" class="box-content" alt="How I Met Your Mother">
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <script src="https://kit.fontawesome.com/58caf338c7.js" crossorigin="anonymous"></script>
   <script src="js/owl/jquery.min.js"></script>
   <script src="js/owl/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- <script src="js/services/filmes.js"></script> -->
 </body>
 </html>

@@ -11,22 +11,37 @@
 
 body {
   background: var(--preto);
-  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
-main {
+.container-stranger {
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/stranger_things_cover.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
-.container {
+.container-suicide {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/the_suicide_squad_cover.jpg');
+}
+
+.container-naruto {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/naruto_shippuden_cover.jpg');
+}
+
+.container-resident {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/resident_evil_village_cover.jpg');
+}
+
+.container-stranger, .container-naruto, .container-suicide, .container-resident {
+  width: 100vw;
+  background-size: cover;
+  flex: none;
+}
+
+.container, .container-header {
   margin-left: 20px;
 }
 
-.box-content {
-  height: 100%;
-  width: 100%;
-  display: block;
+.container {
+  padding-top: 15%;
+  height: 550px;
 }
