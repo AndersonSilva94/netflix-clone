@@ -15,6 +15,7 @@ body {
   color: white;
 }
 
+
 .container-stranger {
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('../img/stranger_things_cover.jpg');
 }
@@ -32,20 +33,31 @@ body {
 }
 
 .container-stranger, .container-naruto, .container-suicide, .container-resident {
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   flex: none;
 }
 
 .container, .container-header {
-  margin-left: 20px;
+  margin-left: 1.8rem;
 }
 
 .container {
-  padding-top: 15%;
-  height: 550px;
+  padding-top: 10rem;
+  height: 35rem;
 }
 
 .owl-dots {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .container-stranger, .container-naruto, .container-suicide, .container-resident {
+    background-position: center;
+  }
+
+  .container {
+    padding-top: 7rem;
+    height: 30rem;
+  }
 }

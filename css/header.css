@@ -1,5 +1,6 @@
 header {
-  padding-top: 15px;
+  width: 100%;
+  padding-top: 1.2rem;
   position: absolute;
   z-index: 1;
   background: transparent;
@@ -8,30 +9,65 @@ header {
 header .container-header{
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
+
+.right {
+  margin-top: 1.2rem;
+  margin-right: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left, .right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
 
 header .logo {
   color: var(--vermelho);
   font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
-  letter-spacing: 3px;
-  margin-left: 5px;
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: .3rem;
+  margin-left: 1rem;
   border-top-left-radius:70%;
   border-top-right-radius:70%;
 }
 
 .menu-principal {
-  margin-left: 25px;
+  margin-left: 1.8rem;
 }
 
-header nav a {
+header nav a, li a {
   text-decoration: none;
-  color: #AAA;
-  margin-right: 10px;
-}
-
-header nav a:hover {
   color: #fff;
+  margin-right: .7rem;
+}
+
+header nav a:hover, li a:hover, li i:hover {
+  color: #AAA;
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .right, .left {
+    display: none;
+  }
+
+  header .logo {
+    font-size: 2.5rem;
+  }
 }
